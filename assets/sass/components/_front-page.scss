@@ -1,0 +1,89 @@
+#header {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+
+    .header-title {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        color: $white;
+        font-weight: 900;
+    }
+
+    .fa-angle-down {
+        color: $red;
+        font-size: 9em;
+        position: absolute;
+        bottom: 28px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    @include bounce;
+
+    .header-gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+}
+
+.front-content {
+    margin-top: 50px;
+
+    .intro-content {
+        padding: 50px 30px 30px;
+        font-size: 1.5rem;
+        color: $dark-gray;
+    }
+
+    .connect-content {
+        background-color: $red;
+        padding: 70px 30px;
+        color: $white;
+
+        a {
+        	color: $white;
+        	&:hover {
+        		color: darken($white, 20%);
+        	}
+            .connect-title {
+                margin-bottom: 100px;
+                font-size: 3.5rem;
+                color: $white;
+            }
+
+            i {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    .the-word {
+        position: relative;
+
+        .word-wrap {
+            padding: 150px 0px 130px;
+
+            .word-title {
+                @include breakpoint(medium) {
+                    font-size: 4rem;
+                }
+            }
+
+            .word-content {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

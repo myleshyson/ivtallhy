@@ -1,0 +1,100 @@
+// Navigation Styling
+.no-js {
+    @include breakpoint(small only) {
+        .top-bar {
+            display: none;
+        }
+    }
+
+
+    @include breakpoint(medium) {
+        .title-bar {
+            display: none;
+        }
+    }
+}
+
+[data-sticky] {
+    width: 100%;
+}
+
+#mobile-nav {
+    transition: none;
+}
+
+// Rotate Class for Mobile Menu
+//
+.rotate {
+    @include transform(rotate(90deg));
+}
+
+.is-stuck > .top-bar {
+    background-color: $black;
+    .menu > li > a, .submenu > li > a {
+        padding: 1rem;
+        background-color: $black;
+        @include transition(0.25s all ease);
+         &:hover {
+            background-color: lighten($black, 15%);
+        }
+    }
+}
+
+.top-bar {
+    .menu {
+        @extend .expanded;
+
+        @include breakpoint(small down) {
+            @include menu-direction(vertical);
+        }
+
+
+        li {
+            position: relative;
+
+            a {
+                color: $white;
+
+                @include transition(0.25s all ease);
+
+                font-size: 1.5rem;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: darken($red, 15%);
+                }
+            }
+
+            @include breakpoint(small down) {
+                a {
+                    display: inline;
+                }
+            }
+
+
+            img {
+                @include transition(0.3s all ease);
+
+                height: 15px;
+                width: 15px;
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: $top-bar-link-color;
+            }
+        }
+
+        .is-submenu-parent {
+            @include breakpoint(small down) {}
+
+
+            .submenu {
+                position: absolute;
+                overflow: hidden;
+                display: none;
+                left: 0px;
+                min-width: 200px;
+            }
+        }
+    }
+}

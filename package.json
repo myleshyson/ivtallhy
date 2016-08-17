@@ -1,0 +1,26 @@
+{
+  "name": "mad-mouse-foundation-theme",
+  "version": "1.0.0",
+  "description": "Wordpress theme using Foundation, Sass, and Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://Spuds10@bitbucket.org/Spuds10/foundation-mmc-theme.git"
+  },
+  "devDependencies": {
+    "bourbon": "^4.2.6",
+    "foundation-sites": "^6.2.0",
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0",
+    "laravel-elixir-babelify": "^0.1.1",
+    "laravel-elixir-imagemin": "^0.2.3",
+    "motion-ui": "^1.2.2",
+    "normalize-sass": "^1.0.0",
+    "normalize.css": "^4.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+/*   
+Theme Name: Mad Mouse Creative Foundation Theme
+Theme URI: http://madmousecreative.com/
+Description: A custom Mad Mouse Creative Theme for commercial use using the Foundation Framework.
+Author: Mad Mouse
+Author URI: http://madmousecreative.com/
+Version: 1.0
+*/
+
+/*******************Normalize CSS*****************/
+@import "normalize";
+
+/*******************Foundation*****************/
+
+// Bourbon mixins
+@import 'bourbon';
+
+// Imported settings for foundation
+@import 'settings/settings';
+
+// Cusom Site Settings to overide Foundation. Include as many or as few settings as you would like.
+@import 'custom-settings';
+// Necessary file for foundation to work. 
+@import 'foundation';
+@import "motion-ui";
+@import "mixins";
+
+// This includes all components of foundation currently. 
+// Use everything or comment out what you don't need.
+@include foundation-grid;
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+
+
+// Importing Motion UI for Foundation
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+/*******************Cusotom Styles go here*****************/
+@import "globals";
+@import "components/nav";
+@import "components/front-page";
+@import "components/footer";
+@import "contact";

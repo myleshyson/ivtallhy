@@ -1,0 +1,10 @@
+// Styling for Sidebar
+
+#sidebar {
+	.widget { 
+		margin-bottom: 15px; 
+		&:last-of-type {
+			margin-bottom: 0px;
+		}
+	}
+}

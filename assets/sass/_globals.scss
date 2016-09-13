@@ -1,0 +1,28 @@
+.page-header {
+    background-color: $blue;
+    height: 50%;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        top: 25%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: $white;
+        font-weight: 700;
+
+        @include breakpoint(medium) {
+            font-size: 4rem;
+        }
+    }
+}
+
+.main-content {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .fa-spin {
+        font-size: 7rem;
+        color: $black;
+    }
+}

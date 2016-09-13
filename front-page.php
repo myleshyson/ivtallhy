@@ -29,24 +29,24 @@ get_header(); ?>
 
 	<div class="row connect-content text-center">
 		<h2 class="connect-title">Learn More About Our...</h2>
-		<div class="medium-4 columns">
+		<div class="medium-6 columns">
 			<a href="<?php echo get_page_link(8) ?>">
 			<i class="fa fa-book" aria-hidden="true"></i>
 			<h2>Small Groups</h2>
 			</a>
 		</div>
-		<div class="medium-4 columns">
+		<div class="medium-6 columns">
 		<a href="<?php echo get_page_link(46) ?>">
 			<i class="fa fa-heart" aria-hidden="true"></i>
 			<h2>Core Values</h2>
 			</a>
 		</div>
-		<div class="medium-4 columns">
+		<!-- <div class="medium-4 columns">
 		<a href="<?php echo get_page_link(46) ?>">
 		<i class="fa fa-users" aria-hidden="true"></i>
 			<h2>Staff</h2>
 		</a>
-		</div>
+		</div> -->
 	</div>
 	<div class="row the-word">
 		<div class="word-wrap small-8 small-offset-2 columns">
